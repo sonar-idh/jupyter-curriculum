@@ -26,6 +26,7 @@ jupyter-server==1.4.1
 jupyterlab==3.0.9
 jupyterlab-pygments==0.1.2
 jupyterlab-server==2.3.0
+jupyterlab-spellchecker==0.5.1
 MarkupSafe==1.1.1
 mistune==0.8.4
 nbclassic==0.2.6
