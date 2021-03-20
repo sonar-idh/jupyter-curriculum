@@ -16,10 +16,12 @@ RUN pip install --no-cache --upgrade pip
 RUN pip install jupyter  && \
     pip install jupyterlab
 
-
 # copy the dependencies file to the working directory
 COPY requirements.txt .
 
 # install dependencies
 RUN pip install -r requirements.txt
 
+# install notebook extensions for jupyter-notebook
+RUN jupyter contrib nbextension install && \
+    jupyter nbextension enable toc2/main

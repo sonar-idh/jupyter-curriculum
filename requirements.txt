@@ -15,13 +15,19 @@ idna==2.10
 ipykernel==5.5.0
 ipython==7.21.0
 ipython-genutils==0.2.0
+ipywidgets==7.6.3
 jedi==0.18.0
 Jinja2==2.11.3
 json5==0.9.5
 jsonschema==3.2.0
+jupyter==1.0.0
 jupyter-client==6.1.11
+jupyter-console==6.3.0
 jupyter-contrib-core==0.3.3
+jupyter-contrib-nbextensions==0.5.1
 jupyter-core==4.7.1
+jupyter-highlight-selected-word==0.2.0
+jupyter-latex-envs==1.4.6
 jupyter-nbextensions-configurator==0.4.1
 jupyter-packaging==0.7.12
 jupyter-server==1.4.1
@@ -29,6 +35,8 @@ jupyterlab==3.0.9
 jupyterlab-pygments==0.1.2
 jupyterlab-server==2.3.0
 jupyterlab-spellchecker==0.5.1
+jupyterlab-widgets==1.0.0
+lxml==4.6.2
 MarkupSafe==1.1.1
 mistune==0.8.4
 nbclassic==0.2.6
@@ -55,6 +63,8 @@ python-dateutil==2.8.1
 pytz==2021.1
 PyYAML==5.4.1
 pyzmq==22.0.3
+qtconsole==5.0.3
+QtPy==1.9.0
 requests==2.25.1
 Send2Trash==1.5.0
 six==1.15.0
@@ -66,3 +76,4 @@ traitlets==5.0.5
 urllib3==1.26.3
 wcwidth==0.2.5
 webencodings==0.5.1
+widgetsnbextension==3.5.1
