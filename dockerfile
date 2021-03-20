@@ -13,8 +13,6 @@ RUN apt-get install nodejs
 
 # install the notebook package
 RUN pip install --no-cache --upgrade pip 
-RUN pip install jupyter  && \
-    pip install jupyterlab
 
 # copy the dependencies file to the working directory
 COPY requirements.txt .
