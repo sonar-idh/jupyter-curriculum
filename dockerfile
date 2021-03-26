@@ -20,6 +20,10 @@ COPY requirements.txt .
 # install dependencies
 RUN pip install -r requirements.txt
 
-# install notebook extensions for jupyter-notebook
+# install nbextensions
 RUN jupyter contrib nbextension install && \
     jupyter nbextension enable toc2/main
+
+# install citation extension
+RUN pip install 'cite2c==0.2.1' && \
+    python -m cite2c.install

@@ -8,6 +8,7 @@ bleach==3.3.0
 certifi==2020.12.5
 cffi==1.14.5
 chardet==4.0.0
+cite2c==0.2.1
 decorator==4.4.2
 defusedxml==0.7.0
 entrypoints==0.3
@@ -65,6 +66,7 @@ PyYAML==5.4.1
 pyzmq==22.0.3
 qtconsole==5.0.3
 QtPy==1.9.0
+rauth==0.7.3
 requests==2.25.1
 Send2Trash==1.5.0
 six==1.15.0
