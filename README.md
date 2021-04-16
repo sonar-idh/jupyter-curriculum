@@ -5,9 +5,9 @@
 from root path of repository: 
 
 
-1. Build and launch Jupyter Lab via docker compose script 
+1. Build and launch Jupyter Notebook via docker compose script 
 
 ```
-docker-compose up
+docker-compose up jupyter-notebook
 ```
 
