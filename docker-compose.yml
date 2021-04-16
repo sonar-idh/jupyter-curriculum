@@ -2,7 +2,7 @@ services:
   jupyter-notebook:
     container_name: jupyter-notebook
     build: .
-    working_dir: /home/notebooks
+    working_dir: /home
     ports:
       - "8888:8888"
     command: jupyter notebook --allow-root --ip 0.0.0.0 --port 8888 --NotebookApp.password='' --NotebookApp.token=''
