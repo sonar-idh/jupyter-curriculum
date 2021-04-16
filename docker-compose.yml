@@ -9,15 +9,3 @@ services:
     volumes:
       - ./:/home/
       - ./styles/custom.css:/usr/local/lib/python3.8/site-packages/notebook/static/custom/custom.css
-
-  jupyter-lab:
-    container_name: jupyter-lab
-    build: .
-    working_dir: /home/
-    ports:
-      - "8888:8888"
-    command: jupyter lab --allow-root --ip 0.0.0.0 --port 8888 --NotebookApp.password='' --NotebookApp.token=''
-    volumes:
-      - ./:/home/
-      - ./styles/index.css:/usr/local/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
-    
