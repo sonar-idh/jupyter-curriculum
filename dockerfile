@@ -13,6 +13,11 @@ COPY requirements.txt .
 # install dependencies
 RUN pip install -r requirements.txt
 
+# install latex & pandoc
+RUN apt-get install pandoc -y && \
+    apt-get install texlive-xetex texlive-fonts-recommended texlive-generic-recommended -y
+
+
 # notebook setup ------------------
 
 # install notebook widgets
