@@ -59,6 +59,7 @@ neotime==1.7.4
 nest-asyncio==1.5.1
 networkx==2.5.1
 notebook==6.1.5
+notebook-as-pdf==0.4.0
 numpy==1.20.1
 packaging==20.9
 pandas==1.2.3
