@@ -1,5 +1,2 @@
 jupyter contrib nbextension install --user
 jupyter nbextension enable toc2/main
-
-# install pyppeteer for pdf export via html
-pyppeteer-install
