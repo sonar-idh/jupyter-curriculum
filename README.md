@@ -11,12 +11,13 @@ Click the [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/
 
 ### Option 2: Local Setup with Docker
 
-Build and launch Jupyter Notebook via docker compose script 
+Build and launch Jupyter Notebook via Docker:
 
-1. Clone the repository 
-2. From base path of the repository, run the following command:
+1. Clone repository 
+2. Start [Docker](https://www.docker.com)
+2. From base path of repository, run the following command in the Terminal:
     
 ```
-docker-compose up
+docker compose up
 ```
 
