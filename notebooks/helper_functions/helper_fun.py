@@ -7,7 +7,7 @@ def to_nx_graph(neo4j_driver, query):
         results = session.run(query).graph()
 
     # initialize Graph object
-    G = nx.MultiDiGraph()
+    G = nx.Graph()
 
     # process nodes
     nodes = list(results._nodes.values())
@@ -26,5 +26,3 @@ def to_nx_graph(neo4j_driver, query):
                 title=rel.type, 
                 **rel._properties)
     return G
-
-
