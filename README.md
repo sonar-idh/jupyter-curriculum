@@ -8,13 +8,12 @@
 
 <center>
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD) [![made-with-jupyter](https://img.shields.io/badge/Made%20with-Jupyter-1f425f.svg)](https://www.jupyter.org/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![License: ???](https://img.shields.io/badge/License--yellow.svg)](https://opensource.org/licenses/?)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD) [![made-with-jupyter](https://img.shields.io/badge/Made%20with-Jupyter-1f425f.svg)](https://www.jupyter.org/) [![License: ???](https://img.shields.io/badge/License--yellow.svg)](https://opensource.org/licenses/?)
 
 </center>
 
-# Table of Content
+<h1> Table of Content </h1>
 
-- [Table of Content](#table-of-content)
 - [Objective of the Curriculum](#objective-of-the-curriculum)
   - [What is SoNAR (IDH)?](#what-is-sonar-idh)
   - [Content of the Curriculum](#content-of-the-curriculum)
