@@ -4,7 +4,7 @@
 <h2>Interfaces to Data for Historical Social Network Analysis and Research
 </h2>
 
-<p align="center">Interactively learn how to use the <b>SoNAR (IDH)</b> Database to conduct your own <b>historcial network analysis (HNA)</b>. This curriculum provides an introduction into <b>Python</b>, the graph database platform <b>Neo4j</b> and the corresponding query language <b>Cypher</b>.</p>
+<p align="center">Interactively learn how to use the <b>SoNAR (IDH)</b> Database to conduct your own <b>historical network analysis (HNA)</b>. This curriculum provides an introduction into <b>Python</b>, the graph database platform <b>Neo4j</b> and the corresponding query language <b>Cypher</b>.</p>
 
 <center>
 
@@ -36,24 +36,24 @@ The curriculum consists of 5 notebooks, each covering different aspects relevant
 | Notebook | Content | Interactive Version| Static Version |
 |----------|---------|------------| ---------- |
 |Notebook 1 - Jupyter and Python | Basic introduction to Python and Jupyter. Can be skipped in case you worked with Python before| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%201%20-%20Jupyter%20and%20Python.ipynb)| [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/...)|
-|Notebook 2 - Historical Network Analysis | Basic introduction to graph theory and HNA. Example of network analysis based on a network of Nobel aureates. |[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%202%20-%20Historical%20Network%20Analysis.ipynb)| [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/...) |
-| Notebook 3 - SoNAR (IDH) | How to access and query SoNAR (IDH) data. IIntroduction to Neo4j and Cypher Query Language. Examples of data exploration, descriptive analyses and comple queries. | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%203%20-%20SoNAR%20(IDH).ipynb)| [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/...) |
+|Notebook 2 - Historical Network Analysis | Basic introduction to graph theory and HNA. Example of network analysis based on a network of Nobel Laureates. |[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%202%20-%20Historical%20Network%20Analysis.ipynb)| [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/...) |
+| Notebook 3 - SoNAR (IDH) | How to access and query SoNAR (IDH) data. Introduction to Neo4j and Cypher Query Language. Examples of data exploration, descriptive analyses and comple queries. | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%203%20-%20SoNAR%20(IDH).ipynb)| [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/...) |
 | Notebook 4 - History of Physiology | Example case of analysing historical network of physiologist. Depiction of exploratory approach to HNA. | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%203%20-%20SoNAR%20(IDH).ipynb) |
 | Notebook 5 - History of Economy | tba | tba | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/...) |
 
 # How to use the Curriculum?
 
-There multiple ways to use this curriculum: 
+There are multiple ways to use this curriculum: 
 
 1. **Static websites** 
    
-   In the table [above](#Content-of-the-Curriculum) you find links to *static* versions of each notebook. Use this way ro access the notebooks in case you do  not want to run code in an interactive environment but only aim to read up the content of the notebooks. 
+   In the table [above](#Content-of-the-Curriculum), you find links to *static* versions of each notebook. Use this way to access the notebooks in case you do not want to run code in an interactive environment but only want to read up the content of the notebooks. 
 
 2. **Interactive Binder Versions**
 
-    [The Binder Project](https://jupyter.org/binder) enables you to work with the notebooks of this curriculum in a cloud histed interactive session. This way you can execute code and reproduce the contents of the notebooks. You also can write new code and do the exercises right in the notebooks - without installing anything on your computer. The respective links to the binder versions of the notebooks can be found in the table [above](#Content-of-the-Curriculum). 
+    [The Binder Project](https://jupyter.org/binder) enables you to work with the notebooks of this curriculum in a cloud hosted interactive session. This way you can execute code and reproduce the contents of the notebooks. You also can write new code and do the exercises right in the notebooks - without installing anything on your computer. The respective links to the binder versions of the notebooks can be found in the table [above](#Content-of-the-Curriculum). 
 
-    You an also open the full repository structure with binder by clicking on this button:
+    You can also open the full repository structure with binder by clicking on this button:
     [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD)
 
 3. **Interactive Local Versions**
