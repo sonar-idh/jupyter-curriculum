@@ -4,13 +4,11 @@
 <h2>Interfaces to Data for Historical Social Network Analysis and Research
 </h2>
 
-<p align="center">Interactively learn how to use the <b>SoNAR (IDH)</b> Database to conduct your own <b>historical network analysis (HNA)</b>. This curriculum provides an introduction into <b>Python</b>, the graph database platform <b>Neo4j</b> and the corresponding query language <b>Cypher</b>.</p>
+<p align="center">Interactively learn how to use the <b>SoNAR (IDH)</b> Database to conduct your own <b>historical network analysis (HNA)</b>. This curriculum provides an introduction into <b>Python</b>, the graph database platform <b>Neo4j</b> and the corresponding query language <b>Cypher</b>.
 
-<center>
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD) [![made-with-jupyter](https://img.shields.io/badge/Made%20with-Jupyter-1f425f.svg)](https://www.jupyter.org/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD) [![made-with-jupyter](https://img.shields.io/badge/Made%20with-Jupyter-1f425f.svg)](https://www.jupyter.org/) [![License: ???](https://img.shields.io/badge/License--yellow.svg)](https://opensource.org/licenses/?)
-
-</center>
+</p>
 
 <h1> Table of Content </h1>
 
