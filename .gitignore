@@ -1,6 +1,9 @@
 # Jupyter Notebook
 *.ipynb_checkpoints
 
+# Example data
+notebooks/example_export.csv
+
 # Credentials
 creds.yml
 creds.yaml
