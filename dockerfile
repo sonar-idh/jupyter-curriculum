@@ -4,6 +4,10 @@ FROM python:3.8
 # make sure all sources are up to date
 RUN apt-get update -y 
 
+# install graphviz dependencies
+RUN apt-get install gcc -y &&\ 
+    apt-get install graphviz graphviz-dev -y
+
 # upgrade pip
 RUN pip install --no-cache --upgrade pip 
 
@@ -20,10 +24,6 @@ RUN pip install ipywidgets
 
 # install auto formatter 
 RUN pip install autopep8
-
-# install pdf export dependencies
-RUN apt-get install -y pandoc
-RUN apt-get install -y texlive-xetex
 
 # install and activate nbextensions
 RUN jupyter contrib nbextension install && \
