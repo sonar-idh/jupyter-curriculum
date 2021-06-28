@@ -80,8 +80,6 @@ pyee==8.1.0
 Pygments==2.8.0
 pyOpenSSL==20.0.1
 pyparsing==2.4.7
-PyPDF2==1.26.0
-pyppeteer==0.2.5
 pyrsistent==0.17.3
 python-dateutil==2.8.1
 python-louvain==0.15
@@ -104,9 +102,9 @@ toml==0.10.2
 tornado==6.1
 tqdm==4.60.0
 traitlets==5.0.5
-urllib3==1.26.4
+urllib3==1.26.5
 wcwidth==0.2.5
 webencodings==0.5.1
 websocket-client==0.58.0
-websockets==8.1
+websockets==9.1
 widgetsnbextension==3.5.1
