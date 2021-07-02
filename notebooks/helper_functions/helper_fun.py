@@ -32,7 +32,8 @@ def to_nx_graph(neo4j_driver, query):
                 **rel._properties)
     return G
 
-def draw_graph(graph_object, pos = "kamada_kawai_layout", node_labels=None, edge_labels=None, node_color_attribute = "type", color_map= plt.cm.plasma, plot_size=[10,10]):
+def draw_graph(graph_object, pos = "kamada_kawai_layout", node_labels=None, edge_labels=None, 
+               node_color_attribute = "type", color_map= plt.cm.plasma, plot_size=[10,10]):
 
     if pos == "kamada_kawai_layout":
         pos = nx.nx.kamada_kawai_layout(graph_object)
