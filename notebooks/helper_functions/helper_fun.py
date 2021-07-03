@@ -32,11 +32,11 @@ def to_nx_graph(neo4j_driver, query):
                 **rel._properties)
     return G
 
-def draw_graph(graph_object, pos = "kamada_kawai_layout", node_labels=None, edge_labels=None, 
-               node_color_attribute = "type", color_map= plt.cm.plasma, plot_size=[10,10]):
+def draw_graph(graph_object, layout = "kamada_kawai_layout", node_labels=None, edge_labels=None, 
+               node_color_attribute = "type", legend = True, color_map= plt.cm.plasma, plot_size=[10,10]):
 
-    if pos == "kamada_kawai_layout":
-        pos = nx.nx.kamada_kawai_layout(graph_object)
+    layout_fun = getattr(nx, layout)
+    pos = layout_fun(graph_object)
 
     # setup node_colors
     groups = set(nx.get_node_attributes(graph_object,node_color_attribute).values())
@@ -87,7 +87,8 @@ def draw_graph(graph_object, pos = "kamada_kawai_layout", node_labels=None, edge
     # create custom legend according to color_map
 
     geom_list = [Circle([], color = rgb2hex(color_map(float(mapping[term])))) for term in groups]
-    plt.legend(geom_list, groups)
+    if legend:
+        plt.legend(geom_list, groups)
 
     # show the plot
     plt.show()
