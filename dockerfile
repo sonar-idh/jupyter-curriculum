@@ -4,15 +4,6 @@ FROM python:3.8
 # make sure all sources are up to date
 RUN apt-get update -y 
 
-# install graphviz dependencies
-RUN apt-get install -y \ 
-    gcc \ 
-    g++ \
-    libgraphviz-dev \
-    graphviz 
-
-RUN apt-get clean
-
 # upgrade pip
 RUN pip install --no-cache --upgrade pip 
 
