@@ -10,6 +10,13 @@
 
 </p>
 
+<div style="text-align:center">
+<img src="./images/readme/sonar_graph_1.png" witdth = "200" height = "200"/>
+<img src="./images/readme/sonar_graph_2.png" witdth = "200" height = "200"/>
+<img src="./images/readme/sonar_graph_3.png" witdth = "200" height = "200"/>
+
+</div>
+
 <h1> Table of Content </h1>
 
 - [Objective of the Curriculum](#objective-of-the-curriculum)
