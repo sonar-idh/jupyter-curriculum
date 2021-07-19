@@ -27,7 +27,27 @@
           autopep8
           pandas
           # nbdime
-        ]);
+          networkx
+          pyvis
+          python-louvain
+        ]) ++ [
+          (pkgs.python3Packages.buildPythonPackage rec {
+            pname = "neo4j-python-driver";
+            version = "4.3.3";
+
+            src = pkgs.fetchFromGitHub {
+              owner = "neo4j";
+              repo = pname;
+              rev = version;
+              sha256 = "sha256-h/3f4fv7fgO/auBD6R2zRcDZVgSm0mvDFxK9eNEmnIs=";
+            };
+
+            buildInputs = with pkgs.python3Packages; [ pytz pytest ];
+
+            doCheck = false;
+
+          })
+        ];
       };
 
   };
