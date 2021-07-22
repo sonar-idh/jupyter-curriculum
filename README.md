@@ -22,8 +22,8 @@ This curriculum is an invitation to learn how to conduct historical network anal
 
 The curriculum consists of five notebooks, each covering different aspects relevant for conducting network analyses.
 
-| Notebook | Content | Interactive Version | 
-|----------|---------|------------|
+| Notebook | Content | Interactive Version | 
+|----------|---------|-------------------|
 |[1 - Jupyter and Python](https://github.com/sonar-idh/jupyter-curriculum/blob/master/notebooks/Notebook%201%20-%20Jupyter%20and%20Python.ipynb) | Basic introduction to Python and Jupyter. Can be skipped in case you worked with Python before.| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%201%20-%20Jupyter%20and%20Python.ipynb)|
 |[2 - Historical Network Analysis](https://github.com/sonar-idh/jupyter-curriculum/blob/master/notebooks/Notebook%202%20-%20Historical%20Network%20Analysis.ipynb) | Basic introduction to graph theory and HNA. Example of network analysis based on a network of Nobel Laureates. |[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%202%20-%20Historical%20Network%20Analysis.ipynb)|
 |[3 - SoNAR (IDH)](https://github.com/sonar-idh/jupyter-curriculum/blob/master/notebooks/Notebook%203%20-%20SoNAR%20(IDH).ipynb) | How to access and query SoNAR (IDH) data. Introduction to Neo4j and Cypher. Examples of data exploration, descriptive analyses and complex queries. | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sonar-idh/jupyter-curriculum/HEAD?filepath=%2Fnotebooks%2FNotebook%203%20-%20SoNAR%20(IDH).ipynb)|
