@@ -49,15 +49,14 @@ There are multiple ways to use this curriculum:
 
     You also can check out this repository and build the docker container of the curriculum. This way you can manipulate the code completely to your liking and make the changes permanent. 
 
-    To do so, you need to do the following steps:
-
-   1. [Clone repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
-   2. Start [Docker](https://www.docker.com)
-   3. From base path of repository, run the following command in the Terminal:
+    To do so, you need to 1) clone this repository, 2) open the local directory, and 3) start the docker container - from the command line:
     
     ```
-    docker-compose up
+    git clone https://github.com/sonar-idh/jupyter-curriculum
+    cd jupyter-curriculum
+    docker compose up
     ```
+
 ## Credits
 
 The tutorials were created by Florian Richter in the context of the SoNAR (IDH) project with particular support from Mark-Jan Bludau, Kerstin Humm, Thorsten Halling, Eva Maria Holly and Marian Dörk.
