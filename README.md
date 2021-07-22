@@ -36,7 +36,7 @@ There are multiple ways to use this curriculum:
 
 1. **Static websites** 
    
-   In the table [above](#Content-of-the-Curriculum), you find links to *static* versions of each notebook in the first column. Use this way to access the notebooks in case you do not want to run code in an interactive environment but only want to read up the content of the notebooks. 
+   In the table above, you find links to *static* versions of each notebook in the first column. Use this way to access the notebooks in case you do not want to run code in an interactive environment but only want to read up the content of the notebooks. 
 
 2. **Interactive Binder Versions**
 
