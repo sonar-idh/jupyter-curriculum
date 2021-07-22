@@ -1,4 +1,4 @@
-# SoNAR (IDH) - Jupyter Curriculum
+# SoNAR (IDH) - HNA Curriculum
 
 **A hands-on introduction to digital methods for historical network analysis**
 
