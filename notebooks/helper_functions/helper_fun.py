@@ -5,8 +5,20 @@ from matplotlib.colors import rgb2hex
 from itertools import count
 from matplotlib.patches import Circle
 import numpy as np
+from hashlib import sha256
+import json
+from pathlib import Path
 
-def to_nx_graph(neo4j_driver, query):
+def to_nx_graph(neo4j_driver, query, use_cache=True):
+
+    if use_cache:
+        cache_key = "cache/" + sha256(query.encode("utf-8")).hexdigest() + ".json"
+        try:
+            with open(cache_key, "r") as f:
+                return(nx.readwrite.json_graph.node_link_graph(json.loads(f.read())))
+        except:
+            pass
+
 
     with neo4j_driver.session() as session:
         results = session.run(query).graph()
@@ -30,6 +42,11 @@ def to_nx_graph(neo4j_driver, query):
                 key=rel.id, 
                 title=rel.type, 
                 **rel._properties)
+
+    Path("cache").mkdir(exist_ok=True)
+    with open(cache_key, "a") as f:
+        f.write(json.dumps(nx.readwrite.json_graph.node_link_data(G)))
+
     return G
 
 def draw_graph(graph_object, layout = "kamada_kawai_layout", node_labels=None, edge_labels=None, 
