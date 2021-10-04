@@ -54,7 +54,7 @@ There are multiple ways to use this curriculum:
     ```
     git clone https://github.com/sonar-idh/jupyter-curriculum
     cd jupyter-curriculum
-    docker compose up
+    docker-compose up
     ```
 
 ## Credits
