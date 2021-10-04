@@ -5,7 +5,7 @@ services:
     working_dir: /home
     ports:
       - "8888:8888"
-    command: jupyter notebook --allow-root --ip 0.0.0.0 --port 8888 --NotebookApp.password='' --NotebookApp.token=''
+    command: jupyter notebook --allow-root --ip 0.0.0.0 --port 8888 --no-browser --NotebookApp.password='' --NotebookApp.token=''
     volumes:
       - ./:/home/
       - ./styles/custom.css:/usr/local/lib/python3.8/site-packages/notebook/static/custom/custom.css
