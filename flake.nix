@@ -13,7 +13,6 @@
         buildInputs = (with pkgs; [
           python3
           pandoc
-          texlive.combined.scheme-full
           (pkgs.writeShellScriptBin "start-jupyter.sh" ''
             jupyter notebook \
               --ip 127.0.0.1 \
@@ -22,6 +21,7 @@
               --NotebookApp.password="" \
               --NotebookApp.token=""
           '')
+          docker-compose
         ]) ++ (with pkgs.python3Packages; [
           ipywidgets
           autopep8
