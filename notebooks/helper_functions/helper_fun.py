@@ -11,6 +11,9 @@ from pathlib import Path
 
 def to_nx_graph(neo4j_driver, query, use_cache=True):
 
+    # As queries to the Neo4j database are expensive and also don't work inside
+    # the Nix sandbox, we use a cache here, that uses the query text as a key.
+    # The cache is always written, but only read of use_cache=True.
     if use_cache:
         cache_key = "cache/" + sha256(query.encode("utf-8")).hexdigest() + ".json"
         try:
