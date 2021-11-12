@@ -9,6 +9,26 @@
     in
     {
 
+      packages.x86_64-linux = {
+        check-notebook = pkgs.writeScriptBin "check-notebook.py" ''
+          #!${pkgs.python3.interpreter}
+
+          import nbformat
+          from nbclient import NotebookClient
+          import sys
+
+          nb = nbformat.read(sys.argv[1], as_version=4)
+          client = NotebookClient(
+            nb,
+            timeout=600,
+            kernel_name='python3',
+            resources={'metadata': {'path': 'notebooks/'}},
+            skip_cells_with_tag="do_not_check"
+          )
+          client.execute()
+        '';
+      };
+
       checks.x86_64-linux = pkgs.lib.mapAttrs
         (name: nbfile: pkgs.runCommand name
           {
@@ -23,16 +43,14 @@
               python-louvain
               pyyaml
               matplotlib
+
+              self.packages.x86_64-linux.check-notebook
             ];
           } ''
           mkdir -p $out
           cp -r $src notebooks
           chmod u+rw -R notebooks
-          jupyter nbconvert \
-            --to notebook \
-            --execute \
-            --output-dir=$out \
-            "notebooks/${nbfile}"
+          check-notebook.py "notebooks/${nbfile}"
         '')
         {
           notebook1 = "Notebook 1 - Jupyter and Python.ipynb";
@@ -56,6 +74,8 @@
                 --NotebookApp.token=""
             '')
             docker-compose
+            poetry
+            self.packages.x86_64-linux.check-notebook
           ]) ++ (with pkgs.python3Packages; [
             ipywidgets
             autopep8
