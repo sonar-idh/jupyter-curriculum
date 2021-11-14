@@ -27,6 +27,21 @@
           )
           client.execute()
         '';
+        neo4j-python-driver = pkgs.python3Packages.buildPythonPackage rec {
+          pname = "neo4j-python-driver";
+          version = "4.3.3";
+
+          src = pkgs.fetchFromGitHub {
+            owner = "neo4j";
+            repo = pname;
+            rev = version;
+            sha256 = "sha256-h/3f4fv7fgO/auBD6R2zRcDZVgSm0mvDFxK9eNEmnIs=";
+          };
+
+          buildInputs = with pkgs.python3Packages; [ pytz pytest ];
+
+          doCheck = false;
+        };
       };
 
       checks.x86_64-linux = pkgs.lib.mapAttrs
@@ -76,6 +91,7 @@
             docker-compose
             poetry
             self.packages.x86_64-linux.check-notebook
+            self.packages.x86_64-linux.neo4j-python-driver
           ]) ++ (with pkgs.python3Packages; [
             ipywidgets
             autopep8
@@ -84,24 +100,7 @@
             networkx
             pyvis
             python-louvain
-          ]) ++ [
-            (pkgs.python3Packages.buildPythonPackage rec {
-              pname = "neo4j-python-driver";
-              version = "4.3.3";
-
-              src = pkgs.fetchFromGitHub {
-                owner = "neo4j";
-                repo = pname;
-                rev = version;
-                sha256 = "sha256-h/3f4fv7fgO/auBD6R2zRcDZVgSm0mvDFxK9eNEmnIs=";
-              };
-
-              buildInputs = with pkgs.python3Packages; [ pytz pytest ];
-
-              doCheck = false;
-
-            })
-          ];
+          ]);
         };
 
     };
